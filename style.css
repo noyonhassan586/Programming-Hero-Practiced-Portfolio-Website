@@ -66,4 +66,29 @@ nav ul {
     background-image: url('images/developer.png'), url('images/header_bg.png');
     background-repeat: no-repeat;
     background-position: top left, bottom right;
+    /* background-position: first picture, second picture */
+}
+
+/* Main */
+.main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* About Section */
+.about {
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 130px 150px;
+    margin: 30px 35px;
+    text-align: center;
+}
+
+.item-description {
+    font-weight: 800
+}
+
+.about-items {
+    display: flex;
+    justify-content: space-between;
 }
