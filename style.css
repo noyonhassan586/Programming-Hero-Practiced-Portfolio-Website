@@ -1,0 +1,69 @@
+.work-sans-normal {
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+/* Nav Style */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav-title {
+    font-weight: 800;
+    font-size: 45px;
+}
+
+/* If you want to display: flex; some elements, you need to see who those elements belong to, that is, you need to give the parent of the elements a class/direct style to display flex. */
+
+nav ul li {
+    list-style: none;
+    margin-right: 50px;
+
+    /* Since this is a list, list-style: none; has been used, text-decoration: none; has not been used. */
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    /* Due to display flex, the parent is inline, but the elements within the parent will still be inline, but they will be stuck to each other. To fix this, you need to give the elements a specific style, such as: margin. */
+}
+
+.nav-title .text-primary {
+    color: green;
+}
+
+.btn-primary {
+    background-color: indianred;
+    font-weight: bold;
+    color: white;
+    padding: 18px 35px;
+    /* 18px top and bottom, 35px left and right */
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+}
+
+/* Banner Style */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 35px 0px 200px;
+}
+
+/* Nav + Banner Image (Header Image) */
+.header {
+    background-image: url('images/developer.png'), url('images/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
